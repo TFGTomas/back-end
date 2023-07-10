@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Use the routes
-app.use('/api', routes);
+app.use('/apiPasarela', routes);
 
 const PORT = process.env.PORT || 3330;
 
