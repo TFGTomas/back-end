@@ -1,0 +1,303 @@
+// Create a new usuario
+POST http://localhost:3001/api/usuario
+Content-Type: application/json
+
+{
+  "email": "juan@example.com",
+  "wallets": [
+    {
+      "address": "0xb92eC3280324526dCc2366E3273fAD65fE69245d",
+      "network": "Ethereum"
+    }
+  ],
+  "transaction_ids": ["transaction1", "transaction2"],
+  "accepted_terms": true,
+  "accepted_publicity": false
+}
+
+###
+
+// Get all usuarios
+GET http://localhost:3001/api/usuarios
+###
+
+// Get a usuario by id (replace `1` with the actual id)
+GET http://localhost:3001/api/usuario/bytomas98@gmail.com
+###
+
+// Update a usuario by id
+PUT http://localhost:3001/api/usuario/1
+Content-Type: application/json
+
+{
+  "email": "jose@example.com",
+  "wallets": [
+    {
+      "address": "0xNewAddress",
+      "network": "Ethereum"
+    }
+  ],
+  "transaction_ids": ["transaction3"],
+  "accepted_terms": true,
+  "accepted_publicity": true
+}
+
+###
+
+// Delete a usuario by id
+DELETE http://localhost:3001/api/usuario/1
+
+###
+
+// Create a new criptomoneda
+POST http://localhost:3001/api/criptomoneda
+Content-Type: application/json
+
+{
+  "name": "Polygon",
+  "id": "matic-network",
+  "symbol": "MATIC",
+  "image": "/polygon matic logo.png",
+  "networks": [
+    {
+      "id": 137,
+      "name": "Polygon",
+      "image": "/polygon matic logo.png"
+    },
+    {
+      "id": 80001,
+      "name": "Polygon Mumbai",
+      "image": "/polygon matic logo.png"
+    }
+  ]
+}
+
+###
+
+// Get all criptomonedas
+GET http://localhost:3001/api/criptomonedas
+###
+
+// Get a criptomoneda by id (replace `bitcoin` with the actual id)
+GET http://localhost:3001/api/criptomoneda/bitcoin
+###
+
+// Update a criptomoneda by id
+PUT http://localhost:3001/api/criptomoneda/bitcoin
+Content-Type: application/json
+
+{
+    "name": "Bitcoin",
+    "id": "bitcoin",
+    "symbol": "BTC",
+    "image": "https://assets.coingecko.com/coins/images/1/large/bitcoin.png",
+    "networks": [
+        {
+            "id": 1,
+            "name": "Ethereum",
+            "image": "https://ethereum.org/static/28214bb6d5d10f78bf0458e64871b946/31987/ethereum-og.png",
+            "decimal_place": 18,
+            "contract_address": "0x0000000000000000000000000000000000000000",
+            "contract_ABI": []
+        },
+        {
+            "id": 2,
+            "name": "Bitcoin",
+            "image": "https://assets.coingecko.com/coins/images/1/large/bitcoin.png",
+            "decimal_place": 8,
+            "contract_address": "",
+            "contract_ABI": []
+        }
+    ]
+}
+
+###
+
+// Delete a criptomoneda by id
+DELETE http://localhost:3001/api/criptomoneda/bitcoin
+###
+
+// Create a new Billetera
+POST http://localhost:3001/api/billetera
+Content-Type: application/json
+
+{
+    "id": "walletConnect",
+    "logoImg": "wallet-connect-logo.png",
+    "networks": []
+}
+
+###
+
+// Create a new BilleteraTemp
+POST http://localhost:3001/api/billeteraTemp
+Content-Type: application/json
+
+{
+    "user_id": "user1",
+    "transaction_id": "trans1",
+    "cryptocurrency_id": "crypto1",
+    "public_key": "publicKeyString",
+    "private_key_encrypted": "encryptedPrivateKeyString",
+    "expiration_date": "2023-07-01T00:00:00.000Z"
+}
+
+###
+
+// Get all BilleterasTemp
+GET http://localhost:3001/api/billeterasTemp
+###
+
+// Get a BilleteraTemp by id (replace `1` with the actual id)
+GET http://localhost:3001/api/billeteraTemp/1
+###
+
+// Update a BilleteraTemp (replace `1` with the actual id and provide any field you want to update)
+PUT http://localhost:3001/api/billeteraTemp/1
+Content-Type: application/json
+
+{
+    "expiration_date": "2023-07-02T00:00:00.000Z"
+}
+
+###
+
+// Delete a BilleteraTemp (replace `1` with the actual id)
+DELETE http://localhost:3001/api/billeteraTemp/1
+###
+
+
+
+// Create a new Transaccion
+POST http://localhost:3001/api/transaccion
+Content-Type: application/json
+
+{
+    "_id": "trans1",
+    "user_id": "user1",
+    "crypto_id": "crypto1",
+    "amount_crypto": 1.5,
+    "amount_fiat": 5000.0,
+    "status": "pending",
+    "timestamp": "2023-07-01T00:00:00.000Z",
+    "network_id": "network1",
+    "temp_wallet_id": "tempWallet1",
+    "invoice": {
+        "invoice_id": "invoice1",
+        "sent": false,
+        "downloaded": false
+    }
+}
+
+###
+
+// Get all Transacciones
+GET http://localhost:3001/api/transacciones
+###
+
+// Get a Transaccion by id (replace `trans1` with the actual id)
+GET http://localhost:3001/api/transaccion/trans1
+###
+
+// Update a Transaccion (replace `trans1` with the actual id and provide any field you want to update)
+PUT http://localhost:3001/api/transaccion/trans1
+Content-Type: application/json
+
+{
+    "status": "confirmed"
+}
+
+###
+
+// Delete a Transaccion (replace `trans1` with the actual id)
+DELETE http://localhost:3001/api/transaccion/trans1
+###
+
+
+
+// Create a new Exchange
+POST http://localhost:3001/api/exchange
+Content-Type: application/json
+
+{
+    "id": "kucoin2",
+    "name": "Kucoin",
+    "nameExchange": "Kucoin",
+    "logoImg": "kucoin.png",
+    "supported_cryptocurrencies": [
+        {
+           "name": "Ethereum",
+            "id": "ethereum",
+            "symbol": "ETH",
+            "image": "/ethereum logo.png",
+            "networks": [
+                {
+                    "id": 1,
+                    "name": "Ethereum",
+                    "image": "/ethereum logo.png"
+                }
+            ]
+        }
+    ]
+}
+
+###
+
+// Get all Exchanges
+GET http://localhost:3001/api/exchanges
+###
+
+// Get an Exchange by id (replace `exchange1` with the actual id)
+GET http://localhost:3001/api/exchange/exchange1
+###
+
+// Update an Exchange (replace `exchange1` with the actual id and provide any field you want to update)
+PUT http://localhost:3001/api/exchange/exchange1
+Content-Type: application/json
+
+{
+    "name": "New Exchange Name"
+}
+
+###
+
+// Delete an Exchange (replace `exchange1` with the actual id)
+DELETE http://localhost:3001/api/exchange/exchange1
+###
+
+
+
+// Create a new Red (replace `cripto1` with actual criptomoneda id)
+POST http://localhost:3001/api/red
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "Network Name",
+    "image": "image.png",
+    "decimal_place": 18,
+    "contract_address": "0x...",
+    "contract_ABI": [
+        // replace this with actual ABI data
+    ]
+}
+
+###
+
+// Get all Redes for a given Criptomoneda (replace `cripto1` with actual criptomoneda id)
+GET http://localhost:3001/api/redes/cripto1
+###
+
+// Update a Red (replace `red1` with the actual id and provide any field you want to update)
+PUT http://localhost:3001/api/red/red1
+Content-Type: application/json
+
+{
+    "name": "New Network Name"
+}
+
+###
+
+// Delete a Red (replace `red1` with the actual id)
+DELETE http://localhost:3001/api/red/red1
+###

@@ -1,0 +1,91 @@
+//BINANCE
+
+{
+    "id": "binance",
+    "name": "Binance",
+    "nameExchange": "Binance",
+    "logoImg": "Binance_Logo.svg.png",
+    "supported_cryptocurrencies": [
+        {
+           "name": "Ethereum",
+            "id": "ethereum",
+            "symbol": "ETH",
+            "image": "/ethereum logo.png",
+            "networks": [
+                {
+                    "id": 1,
+                    "name": "Ethereum",
+                    "image": "/ethereum logo.png"
+                }
+            ]
+        }
+    ]
+}
+
+// coinbase
+
+{
+    "id": "coinbase",
+    "name": "Coinbase",
+    "nameExchange": "Coinbase",
+    "logoImg": "coinbase.svg",
+    "supported_cryptocurrencies": [
+        {
+           "name": "Ethereum",
+            "id": "ethereum",
+            "symbol": "ETH",
+            "image": "/ethereum logo.png",
+            "networks": [
+                {
+                    "id": 1,
+                    "name": "Ethereum",
+                    "image": "/ethereum logo.png"
+                }
+            ]
+        }
+    ]
+}
+
+// kucoin
+
+{
+    "id": "kucoin",
+    "name": "Kucoin",
+    "nameExchange": "Kucoin",
+    "logoImg": "kucoin.png",
+    "supported_cryptocurrencies": [
+        {
+           "name": "Ethereum",
+            "id": "ethereum",
+            "symbol": "ETH",
+            "image": "/ethereum logo.png",
+            "networks": [
+                {
+                    "id": 1,
+                    "name": "Ethereum",
+                    "image": "/ethereum logo.png"
+                }
+            ]
+        }
+    ]
+}
+
+//
+
+{
+    "id": "metaMask",
+    "logoImg": "MetaMask_Fox.svg.png",
+    "networks": []
+}
+
+{
+    "id": "coinbaseWallet",
+    "logoImg": "coinbase_wallet_logo.svg",
+    "networks": []
+}
+
+{
+    "id": "walletConnect",
+    "logoImg": "wallet-connect-logo.png",
+    "networks": []
+}
