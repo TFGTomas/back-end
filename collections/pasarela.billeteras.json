@@ -1,0 +1,27 @@
+[{
+  "_id": {
+    "$oid": "64a42e8b35ed2b3994842da7"
+  },
+  "id": "metaMask",
+  "logoImg": "MetaMask_Fox.svg.png",
+  "networks": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64a43e38abeb90d5dab029da"
+  },
+  "id": "coinbaseWallet",
+  "logoImg": "coinbase_wallet_logo.svg",
+  "networks": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64a43e53abeb90d5dab029dc"
+  },
+  "id": "walletConnect",
+  "logoImg": "wallet-connect-logo.png",
+  "networks": [],
+  "__v": 0
+}]
