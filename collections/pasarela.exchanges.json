@@ -1,0 +1,116 @@
+[{
+  "_id": {
+    "$oid": "64a40a52582bb606cedfeb2a"
+  },
+  "id": "binance",
+  "name": "Binance",
+  "nameExchange": "Binance",
+  "logoImg": "Binance_Logo.svg.png",
+  "supported_cryptocurrencies": [
+    {
+      "name": "Ethereum",
+      "id": "ethereum",
+      "symbol": "ETH",
+      "image": "/ethereum logo.png",
+      "networks": [
+        {
+          "id": 1,
+          "name": "Ethereum",
+          "image": "/ethereum logo.png",
+          "contract_ABI": []
+        }
+      ],
+      "_id": {
+        "$oid": "64a40a52582bb606cedfeb2b"
+      }
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64a40db2582bb606cedfeb33"
+  },
+  "id": "coinbase",
+  "name": "Coinbase",
+  "nameExchange": "Coinbase",
+  "logoImg": "coinbase.svg",
+  "supported_cryptocurrencies": [
+    {
+      "name": "Ethereum",
+      "id": "ethereum",
+      "symbol": "ETH",
+      "image": "/ethereum logo.png",
+      "networks": [
+        {
+          "id": 1,
+          "name": "Ethereum",
+          "image": "/ethereum logo.png",
+          "contract_ABI": []
+        }
+      ],
+      "_id": {
+        "$oid": "64a40db2582bb606cedfeb34"
+      }
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64a40e8c582bb606cedfeb36"
+  },
+  "id": "kucoin",
+  "name": "Kucoin",
+  "nameExchange": "Kucoin",
+  "logoImg": "kucoin.png",
+  "supported_cryptocurrencies": [
+    {
+      "name": "Ethereum",
+      "id": "ethereum",
+      "symbol": "ETH",
+      "image": "/ethereum logo.png",
+      "networks": [
+        {
+          "id": 1,
+          "name": "Ethereum",
+          "image": "/ethereum logo.png",
+          "contract_ABI": []
+        }
+      ],
+      "_id": {
+        "$oid": "64a40e8c582bb606cedfeb37"
+      }
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64a4272f5cfbcd924fb3f97e"
+  },
+  "id": "kucoin2",
+  "name": "Kucoin",
+  "nameExchange": "Kucoin",
+  "logoImg": "kucoin.png",
+  "supported_cryptocurrencies": [
+    {
+      "name": "Ethereum",
+      "id": "ethereum",
+      "symbol": "ETH",
+      "image": "/ethereum logo.png",
+      "networks": [
+        {
+          "id": 1,
+          "name": "Ethereum",
+          "image": "/ethereum logo.png",
+          "contract_ABI": []
+        }
+      ],
+      "_id": {
+        "$oid": "64a4272f5cfbcd924fb3f97f"
+      }
+    }
+  ],
+  "__v": 0
+}]
