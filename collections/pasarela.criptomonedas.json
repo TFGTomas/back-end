@@ -5,7 +5,7 @@
   "name": "Tether",
   "id": "tether",
   "symbol": "USDT",
-  "image": "/USDT.PNG",
+  "image": "/USDT.png",
   "networks": [
     {
       "id": 1,
