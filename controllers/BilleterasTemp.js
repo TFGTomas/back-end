@@ -1,38 +1,23 @@
 import {BilleterasTemp} from '../models/models';
 import crypto from 'crypto';
 
-// Generar una clave de 32 bytes
-const key = crypto.randomBytes(32).toString('hex');
-
-console.log(key);
-
-const IV_LENGTH = 16; // Para AES, esto es siempre 16
-let iv = crypto.randomBytes(IV_LENGTH);
-
-console.log(iv.toString('hex'));
-
-
-
 // Create a new temporary wallet
 export async function createBilleteraTemp(req, res) {
-    // Generar una clave de cifrado. Debe ser de 32 bytes para AES-256.
-    // Este es solo un ejemplo, deberías guardar esta clave en un lugar seguro y no en el código.
-    const ENCRYPTION_KEY = process.env.ENCRYPTION_KEY;
-    const iv = process.env.IV;
-    let ivBuffer = Buffer.from(iv, 'hex');
-
-    
-    const cipher = crypto.createCipheriv('aes-256-cbc', Buffer.from(ENCRYPTION_KEY, 'hex'), ivBuffer);
-
-    let encryptedPrivateKey = cipher.update(req.body.private_key_encrypted, 'utf8', 'hex');
-    encryptedPrivateKey += cipher.final('hex');
-
-    const newBilleteraTemp = new BilleterasTemp({
-        ...req.body,
-        private_key_encrypted: encryptedPrivateKey
-    });
-
     try {
+        const ENCRYPTION_KEY = process.env.ENCRYPTION_KEY;
+        const iv = process.env.IV;
+        let ivBuffer = Buffer.from(iv, 'hex');
+
+        const cipher = crypto.createCipheriv('aes-256-cbc', Buffer.from(ENCRYPTION_KEY, 'hex'), ivBuffer);
+
+        let encryptedPrivateKey = cipher.update(req.body.private_key_encrypted, 'utf8', 'hex');
+        encryptedPrivateKey += cipher.final('hex');
+    
+        const newBilleteraTemp = new BilleterasTemp({
+            ...req.body,
+            private_key_encrypted: encryptedPrivateKey
+        });
+    
         const data = await newBilleteraTemp.save();
         res.status(201).send(data);
     } catch (error) {

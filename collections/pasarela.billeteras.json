@@ -24,4 +24,13 @@
   "logoImg": "wallet-connect-logo.png",
   "networks": [],
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ad75956eff1fae6ff2be5b"
+  },
+  "id": "ledger",
+  "logoImg": "Ledger-logo.png",
+  "networks": [],
+  "__v": 0
 }]

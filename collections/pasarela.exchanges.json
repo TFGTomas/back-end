@@ -89,10 +89,10 @@
   "_id": {
     "$oid": "64a4272f5cfbcd924fb3f97e"
   },
-  "id": "kucoin2",
-  "name": "Kucoin",
-  "nameExchange": "Kucoin",
-  "logoImg": "kucoin.png",
+  "id": "bybit",
+  "name": "Bybit",
+  "nameExchange": "Bybit",
+  "logoImg": "bybit-logo.png",
   "supported_cryptocurrencies": [
     {
       "name": "Ethereum",
@@ -109,6 +109,93 @@
       ],
       "_id": {
         "$oid": "64a4272f5cfbcd924fb3f97f"
+      }
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ad75d76eff1fae6ff2be6b"
+  },
+  "id": "kraken",
+  "name": "Kraken",
+  "nameExchange": "Kraken",
+  "logoImg": "Kraken-logo.jpg",
+  "supported_cryptocurrencies": [
+    {
+      "name": "Ethereum",
+      "id": "ethereum",
+      "symbol": "ETH",
+      "image": "/ethereum logo.png",
+      "networks": [
+        {
+          "id": 1,
+          "name": "Ethereum",
+          "image": "/ethereum logo.png",
+          "contract_ABI": []
+        }
+      ],
+      "_id": {
+        "$oid": "64ad75d76eff1fae6ff2be6c"
+      }
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ad75fd6eff1fae6ff2be6e"
+  },
+  "id": "coinex",
+  "name": "CoinEx",
+  "nameExchange": "CoinEx",
+  "logoImg": "coinex-logo.png",
+  "supported_cryptocurrencies": [
+    {
+      "name": "Ethereum",
+      "id": "ethereum",
+      "symbol": "ETH",
+      "image": "/ethereum logo.png",
+      "networks": [
+        {
+          "id": 1,
+          "name": "Ethereum",
+          "image": "/ethereum logo.png",
+          "contract_ABI": []
+        }
+      ],
+      "_id": {
+        "$oid": "64ad75fd6eff1fae6ff2be6f"
+      }
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ad76a16eff1fae6ff2be95"
+  },
+  "id": "bitfinex",
+  "name": "Bitfinex",
+  "nameExchange": "Bitfinex",
+  "logoImg": "bitfinex-logo.png",
+  "supported_cryptocurrencies": [
+    {
+      "name": "Ethereum",
+      "id": "ethereum",
+      "symbol": "ETH",
+      "image": "/ethereum logo.png",
+      "networks": [
+        {
+          "id": 1,
+          "name": "Ethereum",
+          "image": "/ethereum logo.png",
+          "contract_ABI": []
+        }
+      ],
+      "_id": {
+        "$oid": "64ad76a16eff1fae6ff2be96"
       }
     }
   ],
