@@ -50,27 +50,17 @@ DELETE http://localhost:3001/api/usuario/1
 ###
 
 // Create a new criptomoneda
-POST http://localhost:3001/api/criptomoneda
+POST http://localhost:3330/apiPasarela/criptomoneda
 Content-Type: application/json
 
 {
-  "name": "Polygon",
-  "id": "matic-network",
-  "symbol": "MATIC",
-  "image": "/polygon matic logo.png",
-  "networks": [
-    {
-      "id": 137,
-      "name": "Polygon",
-      "image": "/polygon matic logo.png"
-    },
-    {
-      "id": 80001,
-      "name": "Polygon Mumbai",
-      "image": "/polygon matic logo.png"
-    }
-  ]
-}
+    "name": "Litecoin",
+    "id": "litecoin",
+    "symbol": "LTC",
+    "image": "/litecoin-logo.png",
+    "networks": [
+    ]
+  }
 
 ###
 
